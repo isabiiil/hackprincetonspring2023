@@ -6,8 +6,10 @@
  */
 
 // import * as dotenv from "dotenv";
-import React from 'react';
+//import firestore from '@react-native-firebase/firestore'
+import React, {useState, useEffect} from 'react';
 import type {PropsWithChildren} from 'react';
+import readDocs from './database/getters';
 import {
   SafeAreaView,
   ScrollView,
@@ -86,6 +88,13 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+  useEffect(() => {
+    async function docReader() {
+        await readDocs();
+    }
+    readDocs;
+  },[]);
+
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
@@ -93,6 +102,7 @@ function App(): JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <ScrollView
+
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
@@ -101,8 +111,8 @@ function App(): JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+          Test
+            {readDocs}
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
