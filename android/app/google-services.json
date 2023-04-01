@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "673819601662",
+    "project_id": "hack-princeton-s23",
+    "storage_bucket": "hack-princeton-s23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673819601662:android:e685fb4e01ae40f87893af",
+        "android_client_info": {
+          "package_name": "com.hackprincetonspring2023"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673819601662-mcajjf1ibg8laecll8di1fjeuulmias1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_GmnA2q-N3E0qkYHZ9d_mIfHRC-ZL7rA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673819601662-mcajjf1ibg8laecll8di1fjeuulmias1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
