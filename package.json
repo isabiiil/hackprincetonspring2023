@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/node": "^18.15.11",
+    "firebase": "^9.19.1",
     "react": "18.2.0",
     "react-native": "0.71.5"
   },

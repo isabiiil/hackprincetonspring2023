@@ -5,6 +5,7 @@
  * @format
  */
 
+// import * as dotenv from "dotenv";
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -24,6 +25,29 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// require('dotenv').config()
+const firebaseConfig = {
+  apiKey: "AIzaSyA2Caf5qtlM4SnJ5zjBU5Pl4GsRiI6fbOA",
+  authDomain: "hack-princeton-s23.firebaseapp.com",
+  projectId: "hack-princeton-s23",
+  storageBucket: "hack-princeton-s23.appspot.com",
+  messagingSenderId: "673819601662",
+  appId: "1:673819601662:web:8c392436b85f6e827893af",
+  measurementId: "G-TMC34ZQD9Z"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 type SectionProps = PropsWithChildren<{
   title: string;
